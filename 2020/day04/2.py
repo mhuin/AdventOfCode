@@ -31,7 +31,7 @@ with open('input') as rawinput:
 def is_valid(passport):
     for i in valid_fields:
         if not valid_fields[i](passport.get(i, '')):
-            print('%s has invalid %s' % (passport, i))
+#            print('%s has invalid %s' % (passport, i))
             return False
     return True
 
